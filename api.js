@@ -1817,9 +1817,9 @@ Popover.prototype.edge = function() {
 };
 Popover.prototype.setEdge = function(e) {
     
-    throw_ifnot_string(b, "e of setEdge");
+    throw_ifnot_string(e, "e of setEdge");
     
-    objc_msgSend(this.nid, "setEdge:", b);
+    objc_msgSend(this.nid, "setEdge:", e);
 };
 Popover.prototype.__defineGetter__("edge", Popover.prototype.edge);
 Popover.prototype.__defineSetter__("edge", Popover.prototype.setEdge);
